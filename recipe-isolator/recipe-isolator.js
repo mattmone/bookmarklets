@@ -5,7 +5,9 @@
     '[id*=mpprecipe-container]', 
     '[id*=zlrecipe-container]', 
     '.recipe-inner', 
-    '.recipe-callout'
+    '.recipe-callout',
+    '#msgTable', 
+    '.recipe-summary'
   ];
   document.body.innerHTML = document.querySelector(containerSelectors.join(',')).outerHTML;
   requestAnimationFrame(_ => {
